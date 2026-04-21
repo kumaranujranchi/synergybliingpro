@@ -60,8 +60,8 @@ class OnboardingController extends Controller
             $tenant->save();
 
             if ($request->order_id) {
-                Log::info("NEW REFERRAL CLAIM: Tenant {$request->name} (Subdomain: {$request->subdomain}) claims Order ID: {$request->order_id}. Please verify in Hostinger Panel.");
-                return redirect('/onboard')->with('success_pending', 'Hooray! We have received your request. Our team is verifying your Hostinger Order ID. Your billing dashboard will be activated within 4-6 hours once verified.');
+                Log::info("NEW REFERRAL CLAIM: Tenant {$request->name} (Subdomain: {$request->subdomain}) claims Hostinger Email: {$request->order_id}. Please verify in Hostinger Panel.");
+                return redirect('/onboard')->with('success_pending', 'Hooray! We have received your request. Our team is verifying your Hostinger Email Address. Your billing dashboard will be activated within 4-6 hours once verified.');
             }
 
             $domain = parse_url(config('app.url'), PHP_URL_HOST);

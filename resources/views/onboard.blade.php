@@ -231,9 +231,9 @@
                 </div>
 
                 <div class="form-group" style="background: rgba(249, 115, 22, 0.05); padding: 20px; border-radius: 15px; border: 1px solid rgba(249, 115, 22, 0.2); margin: 30px 0; box-sizing: border-box;">
-                    <label style="color: var(--primary); font-weight: bold;">Claim Free Access (Hostinger Order ID)</label>
-                    <input type="text" name="order_id" placeholder="Optional: Enter your Hostinger Order ID here" value="{{ old('order_id') }}" style="border-color: rgba(249, 115, 22, 0.3); width: 100%; box-sizing: border-box;">
-                    <p style="font-size: 0.75rem; color: var(--gray); margin-top: 8px;">Leave blank if you are paying for the software separately.</p>
+                    <label style="color: var(--primary); font-weight: bold;">Claim Free Access (Hostinger Email Address)</label>
+                    <input type="text" name="order_id" placeholder="Enter your Hostinger Account Email" value="{{ old('order_id') }}" style="border-color: rgba(249, 115, 22, 0.3); width: 100%; box-sizing: border-box;">
+                    <p style="font-size: 0.75rem; color: var(--gray); margin-top: 8px;">Enter the email you used to purchase Hostinger to avoid software charges.</p>
                 </div>
 
                 <hr style="border: 0; border-top: 1px solid var(--glass-border); margin: 30px 0;">
