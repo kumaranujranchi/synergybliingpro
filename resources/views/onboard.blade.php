@@ -208,7 +208,7 @@
 
             <!-- Step 1 Notice -->
             <div class="affiliate-card">
-                <h4 style="margin-bottom:10px; color:white;">🎁 GET SYNERGY PRO FOR FREE!</h4>
+                <h4 style="margin-bottom:10px; color:white;">🎁 GET SYNERGY BILLING PRO FOR FREE!</h4>
                 <p style="font-size: 0.85rem; color: var(--gray)">Avoid all software charges by purchasing your Hostinger database through our link. We'll verify your Order ID and activate your lifetime access.</p>
                 <a href="https://www.hostinger.com/in?REFERRALCODE=synergy" target="_blank" class="btn-hostinger">
                     BUY HOSTINGER & GET FREE ACCESS &rarr;
@@ -230,9 +230,9 @@
                     </div>
                 </div>
 
-                <div class="form-group" style="background: rgba(249, 115, 22, 0.05); padding: 20px; border-radius: 15px; border: 1px solid rgba(249, 115, 22, 0.2); margin: 30px 0;">
+                <div class="form-group" style="background: rgba(249, 115, 22, 0.05); padding: 20px; border-radius: 15px; border: 1px solid rgba(249, 115, 22, 0.2); margin: 30px 0; box-sizing: border-box;">
                     <label style="color: var(--primary); font-weight: bold;">Claim Free Access (Hostinger Order ID)</label>
-                    <input type="text" name="order_id" placeholder="Optional: Enter your Hostinger Order ID here" value="{{ old('order_id') }}" style="border-color: rgba(249, 115, 22, 0.3);">
+                    <input type="text" name="order_id" placeholder="Optional: Enter your Hostinger Order ID here" value="{{ old('order_id') }}" style="border-color: rgba(249, 115, 22, 0.3); width: 100%; box-sizing: border-box;">
                     <p style="font-size: 0.75rem; color: var(--gray); margin-top: 8px;">Leave blank if you are paying for the software separately.</p>
                 </div>
 
