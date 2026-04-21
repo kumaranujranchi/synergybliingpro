@@ -16,6 +16,11 @@ class InstallationMiddleware
      */
     public function handle($request, Closure $next)
     {
+        // Allow Landing Page and Onboarding Page to bypass installation check
+        if ($request->is('/') || $request->is('onboard')) {
+            return $next($request);
+        }
+
         if (! \Storage::disk('local')->has('database_created')) {
             return redirect('/installation');
         }

@@ -391,7 +391,7 @@
                 <h1>Master Your Billing,<br> Keep Your Data.</h1>
                 <p>Synergy Billing Pro gives you professional invoicing power while keeping your client data exactly where it belongs: on your own servers.</p>
                 <div class="hero-btns">
-                    <a href="/login" class="btn-primary">Get Started Free</a>
+                    <a href="/onboard" class="btn-primary">Get Started Free</a>
                     <a href="mailto:demo@synergy.com?subject=Request Demo" class="btn-secondary">Book Free Demo</a>
                 </div>
             </div>
@@ -404,6 +404,9 @@
                     <div class="usp-text">
                         <h3>Self-Hosted Control</h3>
                         <p>We provide the logic, you provide the storage. Our Hybrid SaaS model ensures that your financial records never leave your own Hostinger or Private database.</p>
+                        <div style="margin: 20px 0;">
+                            <a href="https://www.hostinger.com/in?REFERRALCODE=synergy" target="_blank" style="color:var(--primary); font-weight:bold; text-decoration:none;">Don't have a Hostinger Database? Get it here &rarr;</a>
+                        </div>
                         <ul class="check-list">
                             <li>100% Data Ownership</li>
                             <li>Remote MySQL Connectivity</li>
@@ -462,26 +465,28 @@
                         <h3>Standard</h3>
                         <p>Perfect for DIY Entrepreneurs</p>
                         <div class="price-tag">₹4,999<span>/year</span></div>
+                        <p style="font-size:0.8rem; color:var(--gray); margin-bottom:15px;">*Requires separate <a href="https://www.hostinger.com/in?REFERRALCODE=synergy" target="_blank" style="color:var(--primary)">Hostinger DB</a></p>
                         <ul class="check-list">
                             <li>Self-Onboarding Instructions</li>
                             <li>Unlimited Invoices & Items</li>
                             <li>Premium Dashboard</li>
                             <li>Email Support</li>
                         </ul>
-                        <a href="/login" class="btn-secondary" style="display:block">Choose Plan</a>
+                        <a href="/onboard" class="btn-secondary" style="display:block">Choose Plan</a>
                     </div>
                     <div class="price-card featured">
                         <div style="position:absolute; top:-15px; left:50%; transform:translateX(-50%); background:var(--primary); color:white; padding:5px 20px; border-radius:50px; font-size:0.8rem; font-weight:bold;">MOST POPULAR</div>
                         <h3>Managed</h3>
                         <p>We handle the heavy lifting</p>
                         <div class="price-tag">₹9,999<span>/year</span></div>
+                        <p style="font-size:0.8rem; color:var(--light); margin-bottom:15px;">We set up your Hostinger for you!</p>
                         <ul class="check-list">
                             <li>All Standard Features</li>
                             <li>Full Managed Onboarding</li>
                             <li>Database Optimization</li>
                             <li>Priority 24/7 Support</li>
                         </ul>
-                        <a href="/login" class="btn-primary" style="display:block">Get Managed</a>
+                        <a href="/onboard" class="btn-primary" style="display:block">Get Managed</a>
                     </div>
                 </div>
             </div>
