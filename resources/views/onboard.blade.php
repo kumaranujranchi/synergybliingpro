@@ -197,12 +197,21 @@
                 </div>
             @endif
 
+            @if(session('success_pending'))
+                <div class="alert" style="background: rgba(249, 115, 22, 0.1); border: 1px solid var(--primary); color: white; padding: 30px; text-align:center;">
+                    <div style="font-size: 3rem; margin-bottom: 20px;">⏳</div>
+                    <h3 style="color: var(--primary); margin-bottom: 10px;">Verification in Progress</h3>
+                    <p>{{ session('success_pending') }}</p>
+                    <a href="/" style="color: var(--gray); margin-top: 20px; display:inline-block;">&larr; Back to Home</a>
+                </div>
+            @else
+
             <!-- Step 1 Notice -->
             <div class="affiliate-card">
-                <h4 style="margin-bottom:10px">Need a Database?</h4>
-                <p style="font-size: 0.85rem; color: var(--gray)">Get a high-performance Hostinger database for your data privacy.</p>
+                <h4 style="margin-bottom:10px; color:white;">🎁 GET SYNERGY PRO FOR FREE!</h4>
+                <p style="font-size: 0.85rem; color: var(--gray)">Avoid all software charges by purchasing your Hostinger database through our link. We'll verify your Order ID and activate your lifetime access.</p>
                 <a href="https://www.hostinger.com/in?REFERRALCODE=synergy" target="_blank" class="btn-hostinger">
-                    GET HOSTINGER DATABASE &rarr;
+                    BUY HOSTINGER & GET FREE ACCESS &rarr;
                 </a>
             </div>
 
@@ -219,6 +228,12 @@
                         <input type="text" name="subdomain" placeholder="acme" value="{{ old('subdomain') }}" required style="border-radius: 10px 0 0 10px;">
                         <span style="background: var(--glass-border); padding: 12px; border-radius: 0 10px 10px 0; font-size:0.9rem;">.synergy.com</span>
                     </div>
+                </div>
+
+                <div class="form-group" style="background: rgba(249, 115, 22, 0.05); padding: 20px; border-radius: 15px; border: 1px solid rgba(249, 115, 22, 0.2); margin: 30px 0;">
+                    <label style="color: var(--primary); font-weight: bold;">Claim Free Access (Hostinger Order ID)</label>
+                    <input type="text" name="order_id" placeholder="Optional: Enter your Hostinger Order ID here" value="{{ old('order_id') }}" style="border-color: rgba(249, 115, 22, 0.3);">
+                    <p style="font-size: 0.75rem; color: var(--gray); margin-top: 8px;">Leave blank if you are paying for the software separately.</p>
                 </div>
 
                 <hr style="border: 0; border-top: 1px solid var(--glass-border); margin: 30px 0;">
@@ -250,6 +265,7 @@
                     Already have an account? <a href="/login" style="color:var(--primary)">Login here</a>
                 </p>
             </form>
+            @endif
         </div>
     </div>
 

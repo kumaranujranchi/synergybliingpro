@@ -20,6 +20,7 @@ class Tenant extends Model
         'db_password',
         'subscription_ends_at',
         'is_active',
+        'order_id',
     ];
 
     protected $casts = [

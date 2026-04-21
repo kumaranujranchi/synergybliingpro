@@ -24,6 +24,7 @@ class OnboardingController extends Controller
             'db_name' => 'required|string',
             'db_username' => 'required|string',
             'db_password' => 'required|string',
+            'order_id' => 'nullable|string|max:100',
         ]);
 
         // Attempt to verify DB connection before saving
@@ -51,8 +52,17 @@ class OnboardingController extends Controller
             $tenant->db_username = $request->db_username;
             $tenant->db_password = Crypt::encryptString($request->db_password);
             $tenant->subscription_ends_at = now()->addYear();
-            $tenant->is_active = true;
+            $tenant->order_id = $request->order_id;
+            
+            // If they provided an Order ID, we keep them inactive for verification
+            $tenant->is_active = $request->order_id ? false : true; 
+            
             $tenant->save();
+
+            if ($request->order_id) {
+                Log::info("NEW REFERRAL CLAIM: Tenant {$request->name} (Subdomain: {$request->subdomain}) claims Order ID: {$request->order_id}. Please verify in Hostinger Panel.");
+                return redirect('/onboard')->with('success_pending', 'Hooray! We have received your request. Our team is verifying your Hostinger Order ID. Your billing dashboard will be activated within 4-6 hours once verified.');
+            }
 
             $domain = parse_url(config('app.url'), PHP_URL_HOST);
             $newUrl = "http://{$request->subdomain}.{$domain}";
