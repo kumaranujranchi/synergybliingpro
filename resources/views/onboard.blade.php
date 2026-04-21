@@ -236,12 +236,20 @@
                     <p style="font-size: 0.75rem; color: var(--gray); margin-top: 8px;">Enter the email you used to purchase Hostinger to avoid software charges.</p>
                 </div>
 
+                <div style="text-align:center; margin: 20px 0; padding: 15px; background: rgba(255,255,255,0.03); border-radius: 10px; border: 1px dashed var(--glass-border);">
+                    <p style="font-size: 0.85rem; color: var(--gray); margin-bottom: 10px;">Struggling with database setup?</p>
+                    <a href="https://wa.me/91XXXXXXXXXX?text=Hi, I need help setting up my Synergy Billing database." target="_blank" style="color:var(--primary); font-weight:bold; text-decoration:none; font-size:0.9rem;">
+                        💬 Get Expert Setup Help &rarr;
+                    </a>
+                </div>
+
                 <hr style="border: 0; border-top: 1px solid var(--glass-border); margin: 30px 0;">
                 <h4 style="margin-bottom: 20px; color: var(--primary);">Database Credentials</h4>
 
                 <div class="form-group">
                     <label>Hostinger MySQL Host</label>
                     <input type="text" name="db_host" placeholder="sql123.hostinger.com" value="{{ old('db_host') }}" required>
+                    <p style="font-size:0.7rem; color:var(--gray); margin-top:5px;">Tip: You can use your <strong>Hostinger Temp Domain</strong> as host if needed.</p>
                 </div>
 
                 <div style="display:grid; grid-template-columns: 1fr 1fr; gap: 20px;">
