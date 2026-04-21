@@ -226,7 +226,7 @@
                     <label>Desired Subdomain</label>
                     <div style="display:flex; align-items:center;">
                         <input type="text" name="subdomain" placeholder="acme" value="{{ old('subdomain') }}" required style="border-radius: 10px 0 0 10px;">
-                        <span style="background: var(--glass-border); padding: 12px; border-radius: 0 10px 10px 0; font-size:0.9rem;">.synergybillingpro.com</span>
+                        <span style="background: var(--glass-border); padding: 12px; border-radius: 0 10px 10px 0; font-size:0.9rem;">.honestchoicereview.com</span>
                     </div>
                 </div>
 
