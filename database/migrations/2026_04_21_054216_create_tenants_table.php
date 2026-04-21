@@ -23,6 +23,7 @@ class CreateTenantsTable extends Migration
             $table->text('db_password'); // Encrypted
             $table->timestamp('subscription_ends_at')->nullable();
             $table->boolean('is_active')->default(true);
+            $table->string('order_id')->nullable();
             $table->timestamps();
         });
     }
