@@ -73,6 +73,7 @@ class Kernel extends HttpKernel
         'pdf-auth' => \Crater\Http\Middleware\PdfMiddleware::class,
         'cron-job' => \Crater\Http\Middleware\CronJobMiddleware::class,
         'customer-portal' => \Crater\Http\Middleware\CustomerPortalMiddleware::class,
+        'master-auth' => \Crater\Http\Middleware\MasterAdminAuth::class,
     ];
 
     /**

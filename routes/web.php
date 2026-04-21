@@ -156,3 +156,15 @@ Route::get('/login', function () {
 
 Route::get('/onboard', [\Crater\Http\Controllers\OnboardingController::class, 'show'])->name('onboard');
 Route::post('/onboard', [\Crater\Http\Controllers\OnboardingController::class, 'signup']);
+
+// Master Admin Area
+// ----------------------------------------------
+Route::get('/master/login', [\Crater\Http\Controllers\MasterAdminController::class, 'showLogin'])->name('master.login');
+Route::post('/master/login', [\Crater\Http\Controllers\MasterAdminController::class, 'login'])->name('master.login.submit');
+Route::get('/master/logout', [\Crater\Http\Controllers\MasterAdminController::class, 'logout'])->name('master.logout');
+
+Route::middleware(['master-auth'])->prefix('master')->group(function () {
+    Route::get('/dashboard', [\Crater\Http\Controllers\MasterAdminController::class, 'dashboard'])->name('master.dashboard');
+    Route::post('/toggle/{id}', [\Crater\Http\Controllers\MasterAdminController::class, 'toggleStatus'])->name('master.toggle');
+    Route::delete('/delete/{id}', [\Crater\Http\Controllers\MasterAdminController::class, 'delete'])->name('master.delete');
+});
