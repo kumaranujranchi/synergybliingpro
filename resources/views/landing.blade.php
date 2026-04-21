@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Synergy Billing Pro | Keep Your Data, Simplify Your Billing</title>
+    <title>Synergy Billing Pro | Premium Hybrid Billing SaaS</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Outfit:wght@500;700;900&display=swap" rel="stylesheet">
     <style>
         :root {
@@ -371,7 +371,7 @@
         <div class="container">
             <nav>
                 <a href="/" class="logo">
-                    <span style="color:white">Synergy</span>Billing
+                    <span style="color:white">Synergy Billing</span> Pro
                 </a>
                 <div class="nav-links">
                     <a href="#features">Features</a>
@@ -495,7 +495,7 @@
 
     <footer>
         <div class="container">
-            <a href="/" class="footer-logo">Synergy Billing</a>
+            <a href="/" class="footer-logo">Synergy Billing Pro</a>
             <div style="margin-bottom: 30px;">
                 <a href="#features" style="color:var(--gray); margin: 0 15px; text-decoration:none">Features</a>
                 <a href="#pricing" style="color:var(--gray); margin: 0 15px; text-decoration:none">Pricing</a>
